@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MapPin, Mail, Smartphone, Code, ExternalLink, Cpu, Terminal } from 'lucide-react';
+import { MapPin, Mail, Smartphone, Code, ExternalLink, Cpu, Terminal, Globe } from 'lucide-react';
 
 // --- CUSTOM BRAND ICONS ---
 // (Since Lucide removed brand icons, we use custom SVGs for GitHub and LinkedIn)
@@ -26,7 +26,8 @@ const PORTFOLIO_DATA = {
     email: "shaikshamshuddin072@gmail.com",
     phone: "+91 9948589751",
     linkedin: "https://www.linkedin.com/in/shaikadnan5884",
-    github: "https://github.com/Shaikadnan5884"
+    github: "https://github.com/Shaikadnan5884",
+    portfolio: "https://shaikadnan5884-portfolio.netlify.app/"
   },
   summary: "Detail-oriented Software Engineer and Android Developer with a strong foundation in building scalable applications and intelligent systems. Proficient in Java, Python, and Web Technologies. Proven ability to design intuitive user interfaces and implement robust database schemas to enhance user engagement.",
   experience: [
@@ -62,28 +63,28 @@ const PORTFOLIO_DATA = {
       type: "Android App",
       description: "Built an Android utility providing real-time data analytics on a daily, weekly, and monthly basis while optimizing background services for minimal battery consumption.",
       link: "https://datausage.netlify.app/",
-      linkType: "Demo"
+      linkType: "Code"
     },
     {
-      title: "Personal Portfolio",
-      type: "Web Application",
-      description: "Designed a responsive, interactive professional brand presence to seamlessly showcase technical expertise and project galleries across mobile, tablet, and desktop devices.",
-      link: "https://shaikadnan5884-portfolio.netlify.app/",
-      linkType: "Demo"
+      title: "SMS Forwarder",
+      type: "Android App",
+      description: "An Android application that captures an incoming SMS and forwards that unaltered message within 1 sec to a recipient, either via a custom Telegram Bot or directly to another mobile number via SMS.",
+      link: "#",
+      linkType: "Code"
     },
     {
-      title: "Polygon Triangulation",
+      title: "Polygon Triangulation Visualization",
       type: "Web Application",
       description: "Developed an interactive tool to visualize computational geometry algorithms and understand the Concept of Matrix Chain Multiplication.",
       link: "https://polygontrainglevisualization.netlify.app/",
-      linkType: "Demo"
+      linkType: "Code"
     },
     {
       title: "Hierarchical Directory Structure",
       type: "Web Application",
       description: "Created a web-based simulation of OS directory structure concepts (One, Two, and Three-level) applied to an E-commerce context.",
       link: "https://os-webapp-treelevelds.netlify.app/",
-      linkType: "Demo"
+      linkType: "Code"
     },
     {
       title: "Medimate AI",
@@ -359,6 +360,7 @@ export default function App() {
             <a href={`mailto:${PORTFOLIO_DATA.contact.email}`} className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><Mail size={16} /> Email Me</a>
             <a href={PORTFOLIO_DATA.contact.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><LinkedinIcon size={16} /> LinkedIn</a>
             <a href={PORTFOLIO_DATA.contact.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><GithubIcon size={16} /> GitHub</a>
+            <a href={PORTFOLIO_DATA.contact.portfolio} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><Globe size={16} /> Portfolio</a>
           </div>
         </div>
 
