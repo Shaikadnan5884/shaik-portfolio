@@ -280,21 +280,22 @@ const useScrollReveal = () => {
 };
 
 const Section = ({ title, children, id }) => {
-  const { ref, isVisible } = useScrollReveal();
-  return (
-    <section 
-      id={id}
-      ref={ref} 
-      className={`py-16 md:py-24 transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-    >
-      <h2 className="text-3xl font-bold mb-10 flex items-center gap-4 text-slate-100">
-        <span className="w-8 h-1 bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full"></span>
-        {title}
-      </h2>
-      {children}
-    </section>
-  );
+  const { ref, isVisible } = useScrollReveal();
+  return (
+    <section 
+      id={id}
+      ref={ref} 
+      className={`py-8 md:py-12 transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+    >
+      <h2 className="text-3xl font-bold mb-8 flex items-center gap-4 text-slate-100">
+        <span className="w-8 h-1 bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full"></span>
+        {title}
+      </h2>
+      {children}
+    </section>
+  );
 };
+
 
 const GlassCard = ({ children, className = "" }) => (
   <div className={`bg-slate-900/40 backdrop-blur-md border border-slate-700/50 rounded-2xl p-6 md:p-8 hover:border-cyan-500/50 hover:bg-slate-800/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300 ${className}`}>
@@ -333,11 +334,10 @@ export default function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+     {/* Hero Section */}
 <Section id="home">
-  <div className="relative group">
-    <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-    {/* ✅ Place ProfileImage.jpeg inside your /public folder */}
+  <div className="relative flex justify-center">
+    <div className="absolute w-64 h-64 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500 blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
     <img 
       src="/ProfileImage.jpeg" 
       alt="Profile" 
@@ -345,6 +345,7 @@ export default function App() {
     />
   </div>
 </Section>
+
       <main className="container mx-auto px-6 pt-32 pb-16">
         <div className="min-h-[70vh] flex flex-col justify-center relative">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium w-max backdrop-blur-sm">
