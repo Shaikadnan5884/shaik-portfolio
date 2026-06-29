@@ -334,7 +334,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <Section title="Home" id="home"></Section>
+      <Section id="home"></Section>
       <main className="container mx-auto px-6 pt-32 pb-16">
         <div className="min-h-[70vh] flex flex-col justify-center relative">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium w-max backdrop-blur-sm">
