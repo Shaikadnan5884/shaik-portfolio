@@ -27,7 +27,7 @@ const PORTFOLIO_DATA = {
     phone: "+91 9948589751",
     linkedin: "https://www.linkedin.com/in/shaikadnan5884",
     github: "https://github.com/Shaikadnan5884",
-    portfolio: "https://shaikadnan5884-portfolio.netlify.app/"
+    portfolio: "https://portfolio-shaikadnan5884.netlify.app/"
   },
   summary: "Detail-oriented Software Engineer and Android Developer with a strong foundation in building scalable applications and intelligent systems. Proficient in Java, Python, and Web Technologies. Proven ability to design intuitive user interfaces and implement robust database schemas to enhance user engagement.",
   experience: [
@@ -56,34 +56,34 @@ const PORTFOLIO_DATA = {
       type: "Android App",
       description: "Engineered a comprehensive local marketplace ecosystem featuring intuitive hierarchical categories, mastering state management, and building custom UI components within Android Studio.",
       codeUrl: "https://github.com/Shaikadnan5884/bhainsa-market", 
-      demoUrl: "#" // PASTE DEMO LINK HERE (From "Android App" text)
+      demoUrl: "https://bhainsamarket.netlify.app/"
     },
     {
       title: "Internet Data Usage Tracker",
       type: "Android App",
       description: "Built an Android utility providing real-time data analytics on a daily, weekly, and monthly basis while optimizing background services for minimal battery consumption.",
-      codeUrl: "#", // PASTE CODE LINK HERE (From "Code" text)
+      codeUrl: "https://github.com/Shaikadnan5884/daily_I_data_tracker",
       demoUrl: "https://datausage.netlify.app/" 
     },
     {
       title: "SMS Forwarder",
       type: "Android App",
       description: "An Android application that captures an incoming SMS and forwards that unaltered message within 1 sec to a recipient, either via a custom Telegram Bot or directly to another mobile number via SMS.",
-      codeUrl: "#", // PASTE CODE LINK HERE (From "Code" text)
-      demoUrl: "#" // PASTE DEMO LINK HERE (From "Android App" text)
+      codeUrl: "https://github.com/Shaikadnan5884/SMS-Forwarder",
+      demoUrl: "https://sms-forworder.netlify.app/"
     },
     {
       title: "Polygon Triangulation Visualization",
       type: "Web Application",
       description: "Developed an interactive tool to visualize computational geometry algorithms and understand the Concept of Matrix Chain Multiplication.",
-      codeUrl: "#", // PASTE CODE LINK HERE (From "Code" text)
+      codeUrl: "https://github.com/Shaikadnan5884/polygonTraingleVisualization",
       demoUrl: "https://polygontrainglevisualization.netlify.app/" 
     },
     {
       title: "Hierarchical Directory Structure",
       type: "Web Application",
       description: "Created a web-based simulation of OS directory structure concepts (One, Two, and Three-level) applied to an E-commerce context.",
-      codeUrl: "#", // PASTE CODE LINK HERE (From "Code" text)
+      codeUrl: "https://github.com/Shaikadnan5884/Visualization-of-tree-level-directory-structure-in-E-commerce-platform-web-application",
       demoUrl: "https://os-webapp-treelevelds.netlify.app/" 
     },
     {
@@ -91,7 +91,7 @@ const PORTFOLIO_DATA = {
       type: "Web Application",
       description: "Developed an AI-powered consultant designed to provide immediate responses to medical inquiries through a natural language interface.",
       codeUrl: "https://github.com/Shaikadnan5884/medimate-ai", 
-      demoUrl: "#" // PASTE DEMO LINK HERE (From "Web Application" text)
+      demoUrl: "https://medimate-ai.netlify.app/"
     }
   ],
   skills: [
