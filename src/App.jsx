@@ -55,43 +55,43 @@ const PORTFOLIO_DATA = {
       title: "Bhainsa Market",
       type: "Android App",
       description: "Engineered a comprehensive local marketplace ecosystem featuring intuitive hierarchical categories, mastering state management, and building custom UI components within Android Studio.",
-      link: "https://github.com/Shaikadnan5884/bhainsa-market",
-      linkType: "Code"
+      codeUrl: "https://github.com/Shaikadnan5884/bhainsa-market",
+      demoUrl: "#"
     },
     {
       title: "Internet Data Usage Tracker",
       type: "Android App",
       description: "Built an Android utility providing real-time data analytics on a daily, weekly, and monthly basis while optimizing background services for minimal battery consumption.",
-      link: "https://datausage.netlify.app/",
-      linkType: "Code"
+      codeUrl: "#",
+      demoUrl: "https://datausage.netlify.app/"
     },
     {
       title: "SMS Forwarder",
       type: "Android App",
       description: "An Android application that captures an incoming SMS and forwards that unaltered message within 1 sec to a recipient, either via a custom Telegram Bot or directly to another mobile number via SMS.",
-      link: "#",
-      linkType: "Code"
+      codeUrl: "#",
+      demoUrl: "#"
     },
     {
       title: "Polygon Triangulation Visualization",
       type: "Web Application",
       description: "Developed an interactive tool to visualize computational geometry algorithms and understand the Concept of Matrix Chain Multiplication.",
-      link: "https://polygontrainglevisualization.netlify.app/",
-      linkType: "Code"
+      codeUrl: "#",
+      demoUrl: "https://polygontrainglevisualization.netlify.app/"
     },
     {
       title: "Hierarchical Directory Structure",
       type: "Web Application",
       description: "Created a web-based simulation of OS directory structure concepts (One, Two, and Three-level) applied to an E-commerce context.",
-      link: "https://os-webapp-treelevelds.netlify.app/",
-      linkType: "Code"
+      codeUrl: "#",
+      demoUrl: "https://os-webapp-treelevelds.netlify.app/"
     },
     {
       title: "Medimate AI",
       type: "Web Application",
       description: "Developed an AI-powered consultant designed to provide immediate responses to medical inquiries through a natural language interface.",
-      link: "https://github.com/Shaikadnan5884/medimate-ai",
-      linkType: "Code"
+      codeUrl: "https://github.com/Shaikadnan5884/medimate-ai",
+      demoUrl: "#"
     }
   ],
   skills: [
@@ -400,19 +400,42 @@ export default function App() {
                     <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">{project.title}</h3>
                     <span className="text-sm text-indigo-400 mt-1 block">{project.type}</span>
                   </div>
-                  <a href={project.link} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-cyan-500 hover:text-slate-900 transition-colors">
-                    {project.linkType === 'Code' ? <GithubIcon size={18} /> : <ExternalLink size={18} />}
-                  </a>
+                  <div className="flex gap-2">
+                    {project.codeUrl && (
+                      <a href={project.codeUrl} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-cyan-500 hover:text-slate-900 transition-colors" title="View Source Code">
+                        <GithubIcon size={18} />
+                      </a>
+                    )}
+                    {project.demoUrl && (
+                      <a href={project.demoUrl} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-indigo-500 hover:text-white transition-colors" title="View Live Demo">
+                        <ExternalLink size={18} />
+                      </a>
+                    )}
+                  </div>
                 </div>
                 <p className="text-slate-400 flex-grow mb-6 text-sm leading-relaxed">{project.description}</p>
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 hover:text-cyan-300 w-max"
-                >
-                  View {project.linkType} &rarr;
-                </a>
+                <div className="flex flex-wrap gap-5 mt-auto">
+                  {project.codeUrl && (
+                    <a 
+                      href={project.codeUrl} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 hover:text-cyan-300 w-max"
+                    >
+                      View Code &rarr;
+                    </a>
+                  )}
+                  {project.demoUrl && (
+                    <a 
+                      href={project.demoUrl} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400 hover:text-indigo-300 w-max"
+                    >
+                      View Demo &rarr;
+                    </a>
+                  )}
+                </div>
               </GlassCard>
             ))}
           </div>
