@@ -16,82 +16,28 @@ const LinkedinIcon = ({ size = 24, className = "" }) => (
   </svg>
 );
 
-// --- PORTFOLIO DATA ---
 const PORTFOLIO_DATA = {
   name: "Shaik Adnan",
   roles: ["Software Engineer", "Android Developer"],
   contact: {
     location: "Hyderabad, Telangana, India",
     email: "shaikshamshuddin072@gmail.com",
-    phone: "+91 9948589751",
     linkedin: "https://www.linkedin.com/in/shaikadnan5884",
     github: "https://github.com/Shaikadnan5884",
-    portfolio: "https://portfolio-shaikadnan5884.netlify.app/"
   },
   summary: "Detail-oriented Software Engineer and Android Developer with a strong foundation in building scalable applications and intelligent systems. Proficient in Java, Python, and Web Technologies. Proven ability to design intuitive user interfaces and implement robust database schemas to enhance user engagement.",
   experience: [
-    {
-      title: "Android Development Intern",
-      company: "Aenexz Tech",
-      period: "06/2026 - Present",
-      description: "Assisting in the architecture and development of scalable Android applications utilizing Java and XML within Android Studio to enhance overall performance."
-    },
-    {
-      title: "Internship Student",
-      company: "Oasis Info byte",
-      period: "04/2026 - 05/2026",
-      description: "Created intuitive Android applications and designed robust database schemas with optimized data access layers to significantly improve user engagement and retrieval times."
-    },
-    {
-      title: "Training Intern",
-      company: "Indus Tech Solutions",
-      period: "05/2024 - 10/2024",
-      description: "Developed functional prototypes for diverse Android applications utilizing various APIs to effectively demonstrate core functionalities."
-    }
+    { title: "Android Development Intern", company: "Aenexz Tech", period: "06/2026 - Present", description: "Assisting in the architecture and development of scalable Android applications utilizing Java and XML within Android Studio to enhance overall performance." },
+    { title: "Internship Student", company: "Oasis Info byte", period: "04/2026 - 05/2026", description: "Created intuitive Android applications and designed robust database schemas with optimized data access layers to significantly improve user engagement and retrieval times." },
+    { title: "Training Intern", company: "Indus Tech Solutions", period: "05/2024 - 10/2024", description: "Developed functional prototypes for diverse Android applications utilizing various APIs to effectively demonstrate core functionalities." }
   ],
   projects: [
-    {
-      title: "Bhainsa Market",
-      type: "Android App",
-      description: "Engineered a comprehensive local marketplace ecosystem featuring intuitive hierarchical categories, mastering state management, and building custom UI components within Android Studio.",
-      codeUrl: "https://github.com/Shaikadnan5884/bhainsa-market", 
-      demoUrl: "https://bhainsamarket.netlify.app/"
-    },
-    {
-      title: "Internet Data Usage Tracker",
-      type: "Android App",
-      description: "Built an Android utility providing real-time data analytics on a daily, weekly, and monthly basis while optimizing background services for minimal battery consumption.",
-      codeUrl: "https://github.com/Shaikadnan5884/daily_I_data_tracker",
-      demoUrl: "https://datausage.netlify.app/" 
-    },
-    {
-      title: "SMS Forwarder",
-      type: "Android App",
-      description: "An Android application that captures an incoming SMS and forwards that unaltered message within 1 sec to a recipient, either via a custom Telegram Bot or directly to another mobile number via SMS.",
-      codeUrl: "https://github.com/Shaikadnan5884/SMS-Forwarder",
-      demoUrl: "https://sms-forworder.netlify.app/"
-    },
-    {
-      title: "Polygon Triangulation Visualization",
-      type: "Web Application",
-      description: "Developed an interactive tool to visualize computational geometry algorithms and understand the Concept of Matrix Chain Multiplication.",
-      codeUrl: "https://github.com/Shaikadnan5884/polygonTraingleVisualization",
-      demoUrl: "https://polygontrainglevisualization.netlify.app/" 
-    },
-    {
-      title: "Hierarchical Directory Structure",
-      type: "Web Application",
-      description: "Created a web-based simulation of OS directory structure concepts (One, Two, and Three-level) applied to an E-commerce context.",
-      codeUrl: "https://github.com/Shaikadnan5884/Visualization-of-tree-level-directory-structure-in-E-commerce-platform-web-application",
-      demoUrl: "https://os-webapp-treelevelds.netlify.app/" 
-    },
-    {
-      title: "Medimate AI",
-      type: "Web Application",
-      description: "Developed an AI-powered consultant designed to provide immediate responses to medical inquiries through a natural language interface.",
-      codeUrl: "https://github.com/Shaikadnan5884/medimate-ai", 
-      demoUrl: "https://medimate-ai.netlify.app/"
-    }
+    { title: "Bhainsa Market", type: "Android App", description: "Engineered a comprehensive local marketplace ecosystem featuring intuitive hierarchical categories, mastering state management, and building custom UI components within Android Studio.", codeUrl: "https://github.com/Shaikadnan5884/bhainsa-market", demoUrl: "https://bhainsamarket.netlify.app/" },
+    { title: "Internet Data Usage Tracker", type: "Android App", description: "Built an Android utility providing real-time data analytics on a daily, weekly, and monthly basis while optimizing background services for minimal battery consumption.", codeUrl: "https://github.com/Shaikadnan5884/daily_I_data_tracker", demoUrl: "https://datausage.netlify.app/" },
+    { title: "SMS Forwarder", type: "Android App", description: "An Android application that captures an incoming SMS and forwards that unaltered message within 1 sec to a recipient, either via a custom Telegram Bot or directly to another mobile number via SMS.", codeUrl: "https://github.com/Shaikadnan5884/SMS-Forwarder", demoUrl: "https://sms-forworder.netlify.app/" },
+    { title: "Polygon Triangulation Visualization", type: "Web Application", description: "Developed an interactive tool to visualize computational geometry algorithms and understand the Concept of Matrix Chain Multiplication.", codeUrl: "https://github.com/Shaikadnan5884/polygonTraingleVisualization", demoUrl: "https://polygontrainglevisualization.netlify.app/" },
+    { title: "Hierarchical Directory Structure", type: "Web Application", description: "Created a web-based simulation of OS directory structure concepts (One, Two, and Three-level) applied to an E-commerce context.", codeUrl: "https://github.com/Shaikadnan5884/Visualization-of-tree-level-directory-structure-in-E-commerce-platform-web-application", demoUrl: "https://os-webapp-treelevelds.netlify.app/" },
+    { title: "Medimate AI", type: "Web Application", description: "Developed an AI-powered consultant designed to provide immediate responses to medical inquiries through a natural language interface.", codeUrl: "https://github.com/Shaikadnan5884/medimate-ai", demoUrl: "https://medimate-ai.netlify.app/" }
   ],
   skills: [
     { category: "Development", items: ["Android Development", "App Prototyping", "Chatbots Development", "UI/UX Design (XML)"], icon: <Smartphone className="text-cyan-400" size={20} /> },
@@ -99,118 +45,101 @@ const PORTFOLIO_DATA = {
     { category: "Strengths", items: ["Problem Solving", "Team Collaboration", "Scalable Thinking"], icon: <Cpu className="text-cyan-400" size={20} /> }
   ],
   education: [
-    { degree: "B-tech, AI & ML", institution: "Geethanjali College of Eng.", date: "Expected June 2028", gpa: null },
+    { degree: "B-tech, AI & ML", institution: "Geethanjali College of Eng.", date: "Expected June 2028" },
     { degree: "High School Diploma", institution: "SGM Govt Polytechnic", date: "April 2025", gpa: "8.9/10" },
     { degree: "SSC", institution: "TMRS Boys 1", date: "May 2022", gpa: "9.0/10" }
   ]
 };
 
-// --- INTERACTIVE BACKGROUND ENGINE ---
 const ParticleNetwork = () => {
   const canvasRef = useRef(null);
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     let particles = [];
-
-    const resize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
+    const resize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
     window.addEventListener('resize', resize);
     resize();
-
-    let mouse = { x: null, y: null, radius: 150 };
-    window.addEventListener('mousemove', e => { mouse.x = e.x; mouse.y = e.y; });
-    window.addEventListener('mouseout', () => { mouse.x = null; mouse.y = null; });
-
     class Particle {
-      constructor(x, y, dx, dy, size, color) {
-        this.x = x; this.y = y; this.dx = dx; this.dy = dy; this.size = size; this.color = color;
-        this.density = (Math.random() * 30) + 1;
-      }
-      draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fillStyle = this.color; ctx.fill(); }
-      update() {
-        if (this.x > canvas.width || this.x < 0) this.dx = -this.dx;
-        if (this.y > canvas.height || this.y < 0) this.dy = -this.dy;
-        this.x += this.dx; this.y += this.dy;
-        if (mouse.x && mouse.y) {
-          let dx = mouse.x - this.x, dy = mouse.y - this.y;
-          let distance = Math.sqrt(dx * dx + dy * dy);
-          if (distance < mouse.radius) {
-            this.x -= (dx / distance) * this.density;
-            this.y -= (dy / distance) * this.density;
-          }
-        }
-        this.draw();
-      }
+      constructor(x, y, dx, dy, size, color) { this.x = x; this.y = y; this.dx = dx; this.dy = dy; this.size = size; this.color = color; this.density = (Math.random() * 30) + 1; }
+      draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false); ctx.fillStyle = this.color; ctx.fill(); }
+      update() { if (this.x > canvas.width || this.x < 0) this.dx = -this.dx; if (this.y > canvas.height || this.y < 0) this.dy = -this.dy; this.x += this.dx; this.y += this.dy; this.draw(); }
     }
-
     const init = () => {
       particles = [];
-      let numberOfParticles = (canvas.width * canvas.height) / 10000;
-      for (let i = 0; i < numberOfParticles; i++) {
+      for (let i = 0; i < 50; i++) {
         let size = (Math.random() * 2) + 1;
-        let x = Math.random() * canvas.width;
-        let y = Math.random() * canvas.height;
-        let dx = (Math.random() - 0.5);
-        let dy = (Math.random() - 0.5);
-        let color = Math.random() > 0.5 ? '#22d3ee' : '#818cf8';
-        particles.push(new Particle(x, y, dx, dy, size, color));
+        particles.push(new Particle(Math.random() * window.innerWidth, Math.random() * window.innerHeight, (Math.random() - 0.5) * 0.5, (Math.random() - 0.5) * 0.5, size, Math.random() > 0.5 ? '#22d3ee' : '#818cf8'));
       }
     };
-
-    const connect = () => {
-      for (let a = 0; a < particles.length; a++) {
-        for (let b = a; b < particles.length; b++) {
-          let distance = (particles[a].x - particles[b].x) ** 2 + (particles[a].y - particles[b].y) ** 2;
-          if (distance < (canvas.width / 7) * (canvas.height / 7)) {
-            ctx.strokeStyle = `rgba(129,140,248,0.2)`;
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(particles[a].x, particles[a].y);
-            ctx.lineTo(particles[b].x, particles[b].y);
-            ctx.stroke();
-          }
-        }
-      }
-    };
-
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => p.update());
-      connect();
-      requestAnimationFrame(animate);
-    };
-
-    init(); animate();
-    return () => { window.removeEventListener('resize', resize); };
+    const animate = () => { requestAnimationFrame(animate); ctx.clearRect(0, 0, canvas.width, canvas.height); particles.forEach(p => p.update()); };
+    init();
+    animate();
+    return () => window.removeEventListener('resize', resize);
   }, []);
-
-  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full -z-10 bg-slate-950" style={{ opacity: 0.8 }} />;
+  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full -z-10 bg-slate-950" />;
 };
 
-// --- MAIN APPLICATION ---
-export default function App() {
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+const Section = ({ title, children, id }) => (
+  <section id={id} className="py-16 md:py-24">
+    <h2 className="text-3xl font-bold mb-10 flex items-center gap-4 text-slate-100">
+      <span className="w-8 h-1 bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full"></span>
+      {title}
+    </h2>
+    {children}
+  </section>
+);
 
+const GlassCard = ({ children, className = "" }) => (
+  <div className={`bg-slate-900/40 backdrop-blur-md border border-slate-700/50 rounded-2xl p-6 ${className}`}>
+    {children}
+  </div>
+);
+
+export default function App() {
   return (
     <div className="min-h-screen text-slate-300 font-sans">
       <ParticleNetwork />
-
-      {/* Navigation */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-950/80 backdrop-blur-md py-4 border-b border-slate-800' : 'bg-transparent py-6'}`}>
+      <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md py-4 border-b border-slate-800">
         <div className="container mx-auto px-6 flex justify-between items-center">
-          <div className="text-xl font-bold text-white tracking-wider flex items-center gap-2">
-            <Code className="text-cyan-400" /> S.A
+          <div className="text-xl font-bold text-white flex items-center gap-2"><Code className="text-cyan-400" /> S.A</div>
+          <div className="flex gap-6 text-sm">
+            {['Home', 'About', 'Experience', 'Projects', 'Skills', 'Education'].map(item => <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-cyan-400">{item}</a>)}
           </div>
-          <div className="hidden md:flex gap-8 text-sm font-medium">
-            {['Home','About','Experience','Projects','Skills','Education'].map(item => (
-              <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-cyan-400 transition-colors">{item}</a>
+        </div>
+      </nav>
+
+      <main className="container mx-auto px-6 pt-32 pb-16">
+        <section id="home" className="min-h-[70vh] flex flex-col items-center justify-center text-center">
+          <div className="relative mb-8 group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-full blur opacity-50"></div>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&h=300&fit=crop" alt="Profile" className="relative w-48 h-48 rounded-full border-4 border-slate-800 object-cover" />
+          </div>
+          <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6">Hi, I'm <span className="text-cyan-400">Shaik Adnan</span></h1>
+          <h2 className="text-2xl text-slate-400 mb-8">{PORTFOLIO_DATA.roles.join(" & ")}</h2>
+          <div className="flex gap-6 text-slate-400">
+            <a href={`mailto:${PORTFOLIO_DATA.contact.email}`}><Mail size={20} /></a>
+            <a href={PORTFOLIO_DATA.contact.linkedin} target="_blank"><LinkedinIcon size={20} /></a>
+            <a href={PORTFOLIO_DATA.contact.github} target="_blank"><GithubIcon size={20} /></a>
+          </div>
+        </section>
+
+        <Section title="About Me" id="about">
+          <GlassCard className="text-lg leading-relaxed border-l-4 border-l-indigo-500">{PORTFOLIO_DATA.summary}</GlassCard>
+        </Section>
+
+        <Section title="Experience" id="experience">
+          <div className="space-y-6">
+            {PORTFOLIO_DATA.experience.map((exp, i) => (
+              <GlassCard key={i}>
+                <h3 className="text-xl font-bold text-white">{exp.title}</h3>
+                <p className="text-indigo-400">{exp.company} • {exp.period}</p>
+                <p className="text-slate-400 mt-2">{exp.description}</p>
+              </GlassCard>
             ))}
-          </
+          </div>
+        </Section>
+      </main>
+    </div>
+  );
+}
