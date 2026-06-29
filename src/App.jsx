@@ -334,29 +334,37 @@ export default function App() {
         </div>
       </nav>
 
-     {/* Hero Section */}
-<Section id="home">
-  <div className="relative flex justify-center">
-    <div className="absolute w-64 h-64 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500 blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-    <img 
-  src="/ProfileImage.jpeg" 
-  alt="Profile" 
-  className="relative w-64 h-64 rounded-full border-4 border-slate-800 object-cover shadow-2xl mb-4" 
-/>
+     <Section id="home">
+  <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+    {/* Profile Image */}
+    <div className="relative">
+      <div className="absolute w-64 h-64 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500 blur opacity-25"></div>
+      <img 
+        src="/ProfileImage.jpeg" 
+        alt="Profile" 
+        className="relative w-64 h-64 rounded-full border-4 border-slate-800 object-cover shadow-2xl" 
+      />
+    </div>
+
+    {/* Name + Roles */}
+    <div className="text-center md:text-left">
+      <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4">
+        Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500">Shaik Adnan</span>
+      </h1>
+      <h2 className="text-2xl md:text-3xl text-slate-400 font-light">
+        {PORTFOLIO_DATA.roles.join(" & ")}
+      </h2>
+    </div>
   </div>
 </Section>
+
 
       <main className="container mx-auto px-6 pt-32 pb-16">
         <div className="min-h-[70vh] flex flex-col justify-center relative">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium w-max backdrop-blur-sm">
             Available for Opportunities
           </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500">Shaik Adnan</span>
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-slate-400 font-light mb-8 max-w-2xl">
-            {PORTFOLIO_DATA.roles.join(" & ")} building scalable systems and intelligent applications.
-          </h2>
+          
           
           <div className="flex flex-wrap gap-4 mb-12">
             <a href="#experience" className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all transform hover:-translate-y-1">
