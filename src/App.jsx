@@ -346,26 +346,7 @@ export default function App() {
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6">Hi, I'm <span className="text-cyan-400">Shaik Adnan</span></h1>
           <h2 className="text-2xl text-slate-400 mb-8">{PORTFOLIO_DATA.roles.join(" & ")}</h2>
-          <div className="min-h-[70vh] flex flex-col justify-center relative">
-          <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium w-max backdrop-blur-sm">
-            Available for Opportunities
-          </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500">Shaik Adnan</span>
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-slate-400 font-light mb-8 max-w-2xl">
-            {PORTFOLIO_DATA.roles.join(" & ")} building scalable systems and intelligent applications.
-          </h2>
           
-          <div className="flex flex-wrap gap-4 mb-12">
-            <a href="#experience" className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all transform hover:-translate-y-1">
-              View Work
-            </a>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-6 text-sm text-slate-400">
-            <span className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><MapPin size={16} /> {PORTFOLIO_DATA.contact.location}</span>
-          <div className="flex gap-6 text-slate-400">
             <a href={`mailto:${PORTFOLIO_DATA.contact.email}`}><Mail size={20} /></a>
             <a href={PORTFOLIO_DATA.contact.linkedin} target="_blank"><LinkedinIcon size={20} /></a>
             <a href={PORTFOLIO_DATA.contact.github} target="_blank"><GithubIcon size={20} /></a>
