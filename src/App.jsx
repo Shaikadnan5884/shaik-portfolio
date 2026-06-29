@@ -406,25 +406,12 @@ export default function App() {
                         <GithubIcon size={18} />
                       </a>
                     )}
-                    {project.demoUrl && (
-                      <a href={project.demoUrl} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-indigo-500 hover:text-white transition-colors" title="View Live Demo">
-                        <ExternalLink size={18} />
-                      </a>
-                    )}
+                    
                   </div>
                 </div>
                 <p className="text-slate-400 flex-grow mb-6 text-sm leading-relaxed">{project.description}</p>
                 <div className="flex flex-wrap gap-5 mt-auto">
-                  {project.codeUrl && (
-                    <a 
-                      href={project.codeUrl} 
-                      target="_blank" 
-                      rel="noreferrer" 
-                      className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 hover:text-cyan-300 w-max"
-                    >
-                      View Code &rarr;
-                    </a>
-                  )}
+                  
                   {project.demoUrl && (
                     <a 
                       href={project.demoUrl} 
