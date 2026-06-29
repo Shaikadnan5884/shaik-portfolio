@@ -339,10 +339,10 @@ export default function App() {
   <div className="relative flex justify-center">
     <div className="absolute w-64 h-64 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500 blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
     <img 
-      src="/ProfileImage.jpeg" 
-      alt="Profile" 
-      className="relative w-64 h-64 rounded-full border-4 border-slate-800 object-cover shadow-2xl" 
-    />
+  src="/ProfileImage.jpeg" 
+  alt="Profile" 
+  className="relative w-64 h-64 rounded-full border-4 border-slate-800 object-cover shadow-2xl mb-4" 
+/>
   </div>
 </Section>
 
