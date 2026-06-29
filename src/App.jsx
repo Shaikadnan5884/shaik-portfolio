@@ -334,12 +334,17 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <Section id="home">
-        <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&h=300&fit=crop" alt="Profile" className="relative w-64 h-64 rounded-full border-4 border-slate-800 object-cover shadow-2xl" />
-            </div>
-      </Section>
+<Section id="home">
+  <div className="relative group">
+    <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+    {/* ✅ Place ProfileImage.jpeg inside your /public folder */}
+    <img 
+      src="/ProfileImage.jpeg" 
+      alt="Profile" 
+      className="relative w-64 h-64 rounded-full border-4 border-slate-800 object-cover shadow-2xl" 
+    />
+  </div>
+</Section>
       <main className="container mx-auto px-6 pt-32 pb-16">
         <div className="min-h-[70vh] flex flex-col justify-center relative">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium w-max backdrop-blur-sm">
