@@ -55,43 +55,43 @@ const PORTFOLIO_DATA = {
       title: "Bhainsa Market",
       type: "Android App",
       description: "Engineered a comprehensive local marketplace ecosystem featuring intuitive hierarchical categories, mastering state management, and building custom UI components within Android Studio.",
-      codeUrl: "https://github.com/Shaikadnan5884/bhainsa-market",
-      demoUrl: "#"
+      codeUrl: "https://github.com/Shaikadnan5884/bhainsa-market", 
+      demoUrl: "#" // PASTE DEMO LINK HERE (From "Android App" text)
     },
     {
       title: "Internet Data Usage Tracker",
       type: "Android App",
       description: "Built an Android utility providing real-time data analytics on a daily, weekly, and monthly basis while optimizing background services for minimal battery consumption.",
-      codeUrl: "#",
-      demoUrl: "https://datausage.netlify.app/"
+      codeUrl: "#", // PASTE CODE LINK HERE (From "Code" text)
+      demoUrl: "https://datausage.netlify.app/" 
     },
     {
       title: "SMS Forwarder",
       type: "Android App",
       description: "An Android application that captures an incoming SMS and forwards that unaltered message within 1 sec to a recipient, either via a custom Telegram Bot or directly to another mobile number via SMS.",
-      codeUrl: "#",
-      demoUrl: "#"
+      codeUrl: "#", // PASTE CODE LINK HERE (From "Code" text)
+      demoUrl: "#" // PASTE DEMO LINK HERE (From "Android App" text)
     },
     {
       title: "Polygon Triangulation Visualization",
       type: "Web Application",
       description: "Developed an interactive tool to visualize computational geometry algorithms and understand the Concept of Matrix Chain Multiplication.",
-      codeUrl: "#",
-      demoUrl: "https://polygontrainglevisualization.netlify.app/"
+      codeUrl: "#", // PASTE CODE LINK HERE (From "Code" text)
+      demoUrl: "https://polygontrainglevisualization.netlify.app/" 
     },
     {
       title: "Hierarchical Directory Structure",
       type: "Web Application",
       description: "Created a web-based simulation of OS directory structure concepts (One, Two, and Three-level) applied to an E-commerce context.",
-      codeUrl: "#",
-      demoUrl: "https://os-webapp-treelevelds.netlify.app/"
+      codeUrl: "#", // PASTE CODE LINK HERE (From "Code" text)
+      demoUrl: "https://os-webapp-treelevelds.netlify.app/" 
     },
     {
       title: "Medimate AI",
       type: "Web Application",
       description: "Developed an AI-powered consultant designed to provide immediate responses to medical inquiries through a natural language interface.",
-      codeUrl: "https://github.com/Shaikadnan5884/medimate-ai",
-      demoUrl: "#"
+      codeUrl: "https://github.com/Shaikadnan5884/medimate-ai", 
+      demoUrl: "#" // PASTE DEMO LINK HERE (From "Web Application" text)
     }
   ],
   skills: [
