@@ -387,25 +387,7 @@ export default function App() {
 </Section>
 
       <main className="container mx-auto px-6 pt-32 pb-16">
-        <div className="min-h-[70vh] flex flex-col justify-center relative">
-          <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium w-max backdrop-blur-sm">
-            Available for Opportunities
-          </div>
-          
-          
-          <div className="flex flex-wrap gap-4 mb-12">
-            <a href="#experience" className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all transform hover:-translate-y-1">
-              View Work
-            </a>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-6 text-sm text-slate-400">
-            <span className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><MapPin size={16} /> {PORTFOLIO_DATA.contact.location}</span>
-            <a href={`mailto:${PORTFOLIO_DATA.contact.email}`} className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><Mail size={16} /> Email Me</a>
-            <a href={PORTFOLIO_DATA.contact.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><LinkedinIcon size={16} /> LinkedIn</a>
-            <a href={PORTFOLIO_DATA.contact.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><GithubIcon size={16} /> GitHub</a>
-            </div>
-        </div>
+        
 
         {/* Summary */}
         <Section title="About Me" id="about">
