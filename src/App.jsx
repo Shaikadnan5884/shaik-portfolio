@@ -347,11 +347,8 @@ export default function App() {
           </h2>
           
           <div className="flex flex-wrap gap-4 mb-12">
-            <a href="#projects" className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all transform hover:-translate-y-1">
+            <a href="#experience" className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all transform hover:-translate-y-1">
               View Work
-            </a>
-            <a href={`mailto:${PORTFOLIO_DATA.contact.email}`} className="px-8 py-3 bg-slate-800/50 border border-slate-600 text-white rounded-lg font-medium hover:bg-slate-700 hover:border-slate-500 backdrop-blur-sm transition-all transform hover:-translate-y-1">
-              Contact Me
             </a>
           </div>
 
@@ -360,8 +357,7 @@ export default function App() {
             <a href={`mailto:${PORTFOLIO_DATA.contact.email}`} className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><Mail size={16} /> Email Me</a>
             <a href={PORTFOLIO_DATA.contact.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><LinkedinIcon size={16} /> LinkedIn</a>
             <a href={PORTFOLIO_DATA.contact.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><GithubIcon size={16} /> GitHub</a>
-            <a href={PORTFOLIO_DATA.contact.portfolio} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><Globe size={16} /> Portfolio</a>
-          </div>
+            </div>
         </div>
 
         {/* Summary */}
