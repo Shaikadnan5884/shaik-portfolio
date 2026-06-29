@@ -334,7 +334,9 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <Section id="home"></Section>
+      <Section id="home">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/032/176/191/small_2x/business-avatar-profile-black-icon-man-of-user-symbol-in-trendy-flat-style-isolated-on-male-profile-people-diverse-face-for-social-network-or-web-vector.jpg"></img>
+      </Section>
       <main className="container mx-auto px-6 pt-32 pb-16">
         <div className="min-h-[70vh] flex flex-col justify-center relative">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium w-max backdrop-blur-sm">
