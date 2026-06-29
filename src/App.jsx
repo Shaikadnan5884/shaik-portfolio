@@ -337,7 +337,11 @@ export default function App() {
       <section id="home" className="min-h-[70vh] flex flex-col items-center justify-center text-center">
           <div className="relative mb-8 group">
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-full blur opacity-50"></div>
-            <img src="ProfileImage.jpeg?q=80&w=300&h=300&fit=crop" alt="Profile" className="relative w-48 h-48 rounded-full border-4 border-slate-800 object-cover" />
+            <img 
+  src="/ProfileImage.jpeg" 
+  alt="Profile" 
+  className="relative w-48 h-48 rounded-full border-4 border-slate-800 object-cover" 
+/>  
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6">Hi, I'm <span className="text-cyan-400">Shaik Adnan</span></h1>
           <h2 className="text-2xl text-slate-400 mb-8">{PORTFOLIO_DATA.roles.join(" & ")}</h2>
