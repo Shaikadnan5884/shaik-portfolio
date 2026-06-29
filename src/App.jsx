@@ -324,7 +324,7 @@ export default function App() {
             <Code className="text-cyan-400" /> S.A
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium">
-            {['Experience', 'Projects', 'Skills', 'Education'].map((item) => (
+            {['Home','About','Experience', 'Projects', 'Skills', 'Education'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-cyan-400 transition-colors">
                 {item}
               </a>
@@ -334,6 +334,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
+      <Section title="Home" id="home"></Section>
       <main className="container mx-auto px-6 pt-32 pb-16">
         <div className="min-h-[70vh] flex flex-col justify-center relative">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium w-max backdrop-blur-sm">
